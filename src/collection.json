@@ -1,0 +1,11 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "awesome-product-name": {
+      "description": "A blank schematic.",
+      "factory": "./awesome-product-name/index#awesomeProductName",
+      "schema": "./awesome-product-name/schema.json",
+      
+    }
+  }
+}

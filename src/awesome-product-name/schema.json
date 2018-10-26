@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "SchemanticsForMenu",
+    "title": "Menu Schema",
+    "type": "object",
+    "properties": {
+        "compound": {
+            "type": "boolean",
+            "description": "Use German-style compound nouns",
+            "default": false,
+            "x-prompt": "Use German-style compound nouns like Donauschiffahrtskapitän?"
+        },
+        "internalName": {
+            "type": "string",
+            "description": "The short and boring internal name",
+            "x-prompt": "What is the short and boring internal name?"
+        },
+        "coolness": {
+            "type": "number",
+            "description": "Degree of coolness",
+            "default": 2,
+            "x-prompt": {
+                "type": "list",
+                "message": "How cool shall the new name be?",
+                "items": [
+                    {
+                        "value": 1,
+                        "label": "Cool"
+                    },
+                    {
+                        "value": 2,
+                        "label": "Very cool"
+                    },
+                    {
+                        "value": 3,
+                        "label": "Drop dead cool"
+                    }
+                ]
+            }
+        }
+    }
+}
